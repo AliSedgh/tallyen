@@ -37,7 +37,7 @@ const ProfileInformation = () => {
       </div>
       {pathname === "/" && (
         <Link
-          className="bg-violet-500 w-full text-center md:w-fit font-semibold px-14 py-2 rounded-md text-white"
+          className=" bg-primary w-full text-center md:w-fit font-semibold px-14 py-2 rounded-md text-white"
           to="/buy"
         >
           خرید جدید
