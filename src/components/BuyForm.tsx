@@ -12,7 +12,6 @@ const BuyForm: React.FC = () => {
   const { unitGoldPrice } = useUserAccountContext();
   const { form, submitHandler } = useCustomForm();
 
-  const amountInToman = convertToToman(form.watch().price);
   const amountInWords = convertNumberToWords(form.watch().price);
 
   const cleanInputValue = useCallback((value: string): string => {
@@ -116,7 +115,7 @@ const BuyForm: React.FC = () => {
                 )}
               />
 
-              <span className="text-xs">{amountInWords}</span>
+              <span className="text-xs mt-2">{amountInWords}</span>
             </div>
           </div>
           <div className="flex justify-end w-full flex-col md:flex-row gap-2 mt-5">
